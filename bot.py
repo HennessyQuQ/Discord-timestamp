@@ -1,7 +1,7 @@
 import discord
 from datetime import datetime
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 
 @client.event
 async def on_message(message):
